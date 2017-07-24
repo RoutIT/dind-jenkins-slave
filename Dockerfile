@@ -36,7 +36,7 @@ VOLUME /var/lib/docker
 
 # Make sure that the "jenkins" user from evarga's image is part of the "docker"
 # group. Needed to access the docker daemon's unix socket.
-RUN groupadd docker
+# RUN groupadd docker
 RUN usermod -a -Ggroupadd dockerdocker jenkins
 
 
