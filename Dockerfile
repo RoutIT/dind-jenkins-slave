@@ -18,7 +18,7 @@ RUN apt-get update -qq && apt-get install -qqy \
     curl \
     lxc \
     iptables && \
-    docker.io && \
+    # docker.io && \
     rm -rf /var/lib/apt/lists/*
 
 RUN echo deb https://apt.dockerproject.org/repo ubuntu-trusty main > /etc/apt/sources.list.d/docker.list && \
